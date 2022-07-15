@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="35dp"
+        android:paddingHorizontal="30dp"
+        tools:context=".presentation.ui.view.Fragment1">
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="3/3"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_indicator"
+            android:layout_marginBottom="30dp"
+            android:text="회원정보를\n입력해주세요."
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_sub_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:text="이름"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_sub_title_1"
+            android:layout_marginBottom="20dp"
+            android:hint="이름을 입력해주세요"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_sub_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_name"
+            android:text="성별"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_sub_title_2"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_sub_title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sex"
+            android:text="생년월일"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_certification_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_sub_title_3"
+            android:hint="생년월일을 입력해주세요"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="다음" />
+
+    </RelativeLayout>
+
+</layout>
