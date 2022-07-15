@@ -32,7 +32,7 @@
             android:textSize="30dp" />
 
         <Button
-            android:id="@+id/btn_agree"
+            android:id="@+id/btn_all_agree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_title"
@@ -43,7 +43,7 @@
             android:id="@+id/cb_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_agree"
+            android:layout_below="@id/btn_all_agree"
             android:text="서비스 이용약관" />
 
         <CheckBox
