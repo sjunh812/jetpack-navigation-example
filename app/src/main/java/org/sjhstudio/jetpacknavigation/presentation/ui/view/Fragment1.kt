@@ -20,9 +20,28 @@ class Fragment1 : BaseFragment<Fragment1Binding>(R.layout.fragment_1) {
 
     private fun initView() {
         with(binding) {
-            btnNext.setOnClickListener {
-                navController.navigate(R.id.action_fragment1_to_fragment2)
+            btnAllAgree.setOnClickListener {
+                cb1.isChecked = true
+                cb2.isChecked = true
+                cb3.isChecked = true
             }
+            btnNext.apply {
+                isEnabled = false
+                btnNext.setOnClickListener {
+                    navController.navigate(R.id.action_fragment1_to_fragment2)
+                }
+            }
+            cb1.setOnCheckedChangeListener { _, _ -> checkAllAgree() }
+            cb2.setOnCheckedChangeListener { _, _ -> checkAllAgree() }
+            cb3.setOnCheckedChangeListener { _, _ -> checkAllAgree() }
+        }
+    }
+
+    private fun checkAllAgree(): Boolean {
+        with(binding) {
+            val allAgree = cb1.isChecked && cb2.isChecked && cb3.isChecked
+            btnNext.isEnabled = allAgree
+            return allAgree
         }
     }
 
