@@ -1,0 +1,1 @@
+C:\Users\sjunh\Desktop\android-project\jetpack-navigation\buildSrc\build\classes\kotlin\main\Libs.class;C:\Users\sjunh\Desktop\android-project\jetpack-navigation\buildSrc\build\classes\kotlin\main\Versions.class
