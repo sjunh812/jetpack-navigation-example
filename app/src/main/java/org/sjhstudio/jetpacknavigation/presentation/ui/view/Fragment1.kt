@@ -9,7 +9,6 @@ import org.sjhstudio.jetpacknavigation.databinding.Fragment1Binding
 import org.sjhstudio.jetpacknavigation.presentation.base.BaseFragment
 
 class Fragment1 : BaseFragment<Fragment1Binding>(R.layout.fragment_1) {
-
     private lateinit var navController: NavController
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -44,5 +43,4 @@ class Fragment1 : BaseFragment<Fragment1Binding>(R.layout.fragment_1) {
             return allAgree
         }
     }
-
 }
