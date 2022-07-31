@@ -6,9 +6,9 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingVertical="35dp"
-        android:paddingHorizontal="30dp"
         android:background="@color/white"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="35dp"
         tools:context=".presentation.ui.view.Fragment1">
 
         <TextView
