@@ -47,16 +47,17 @@ android {
 
     dependencies {
         implementation(Library.Kotlin.KOTLIN_STDLIB)
+
+        implementation(Library.AndroidX.CORE_KTX)
+        implementation(Library.AndroidX.MATERIAL)
+        implementation(Library.AndroidX.APPCOMPAT)
+        implementation(Library.AndroidX.CONSTRAINT_LAYOUT)
         implementation(Library.AndroidX.NAVIGATION_RUNTIME_KTX)
         implementation(Library.AndroidX.NAVIGATION_FRAGMENT_KTX)
         implementation(Library.AndroidX.NAVIGATION_UI_KTX)
+        androidTestImplementation(Library.AndroidX.TEST_JUNIT)
+        androidTestImplementation(Library.AndroidX.ESPRESSO)
 
-        implementation("androidx.core:core-ktx:1.8.0")
-        implementation("com.google.android.material:material:1.6.1")
-        implementation("androidx.appcompat:appcompat:1.4.2")
-        implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-        testImplementation("junit:junit:4.13.2")
-        androidTestImplementation("androidx.test.ext:junit:1.1.3")
-        androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+        testImplementation(Library.JUNIT.JUNIT)
     }
 }
